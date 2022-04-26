@@ -1,0 +1,68 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="css/normalize.css">
+    <link rel="stylesheet" href="css/style.css">
+    <title>Password Generator</title>
+</head>
+
+<body>
+    <header>
+        <div class="container">
+            <h1>Generate a <span id="text-color"> random password </span></h1>
+            <h3>Never use an insecure password again</h3>
+            <p>Select at least on option:</p>
+        </div>
+
+
+    </header>
+    <main>
+        <div class="container">
+
+            <div class="generate-password-items">
+                <input class="checkbox-btn" id="uppercase-el" data-name=" Uppercase" type="checkbox">
+                <input class="checkbox-btn" id="lowercase-el" data-name=" Lowercase" type="checkbox">
+                <input class="checkbox-btn" id="numbers-el" data-name=" Numbers" type="checkbox">
+                <input class="checkbox-btn" id="symbols-el" data-name=" Symbols" type="checkbox">
+
+            </div>
+            <div class="generate-password-slider">
+                <p>Password length:  <span id="length-value"></span></p>
+                <input type="range" min="6" max="22" value="14" class="slider" id="myRange" oninput="this.nextElementSibling.value = this.value"> 
+                <output id="slider-lenght"></output>
+            </div>
+
+            <div class="generate-password-btn">
+                <a class="btn btn-generate">Generate password</a>
+            </div>
+
+            <div class="">
+                <p class="error-text"></p>
+            </div>
+
+            <div class="line">
+                <hr>
+            </div>
+
+            <div class="pass-container">
+                <a class="password" id="pass1">...</a>
+                <a class="password" id="pass2" >...</a>
+                <a class="password" id="pass3">...</a>
+                <a class="password" id="pass4">...</a>
+            </div>
+            
+
+
+        </div>
+
+    </main>
+
+    <script src="app3.js"></script>
+</body>
+
+</html>
+
